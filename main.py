@@ -41,8 +41,8 @@ with col3:
 
 # data_upah
 
-upah_pekerja_bebas = pd.read_csv('data/data_fix/upah_pekerja_bebas.csv', on_bad_lines='skip')
-upah_wirausaha = pd.read_csv('data/data_fix/upah_wirausaha.csv')
+upah_pekerja_bebas = pd.read_csv('data/data_fix/upah_pekerja_bebas.csv', index_col='provinsi')
+upah_wirausaha = pd.read_csv('data/data_fix/upah_wirausaha.csv', index_col='provinsi')
 
 col4, col5 = st.columns(2)
 
