@@ -54,3 +54,7 @@ with col5:
     st.dataframe(upah_wirausaha)
     upah_pekerja_wirausaha_2021 = upah_wirausaha[['tidak_tamat_082021','sd_082021','smp_082021','sma_082021']]
     st.bar_chart(data=upah_pekerja_wirausaha_2021)
+
+    
+st.write('Dari grafik-grafik diatas dapat disimpulkan bahwa tingkat pendidikan yang ditamatkan oleh seseorang memiliki korelasi positif terhadap upah yang didapatkan ketika sudah bekerja.')
+st.write('Sumber data: bps.go.id')
