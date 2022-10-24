@@ -48,6 +48,9 @@ col4, col5 = st.columns(2)
 
 with col4:
     st.dataframe(upah_pekerja_bebas)
-
+    upah_pekerja_bebas_2021 = upah_pekerja_bebas[['tidak_tamat_082021','sd_082021','smp_082021','sma_082021']]
+    st.bar_chart(data=upah_pekerja_bebas_2021)
 with col5:
     st.dataframe(upah_wirausaha)
+    upah_pekerja_wirausaha_2021 = upah_wirausaha[['tidak_tamat_082021','sd_082021','smp_082021','sma_082021']]
+    st.bar_chart(data=upah_pekerja_wirausaha_2021)
